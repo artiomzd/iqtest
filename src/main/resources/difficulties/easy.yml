@@ -1,0 +1,65 @@
+questions:
+  - id: "clock_16_30"
+    title: "Тест на время (1/3)"
+    content: "На какой картинке время ровно 16:30?"
+    form-type: "simple"
+    components:
+      - type: "button"
+        text: "Вариант А"
+        image: "https://i.imgur.com/example1.png" # Картинка где 15:30
+      - type: "button"
+        text: "Вариант Б"
+        image: "https://i.imgur.com/example2.png" # Картинка где 16:30 (Правильно)
+      - type: "button"
+        text: "Вариант В"
+        image: "https://i.imgur.com/example3.png" # Картинка где 17:30
+    correct-answers:
+      button-index: 1
+
+  - id: "clock_11_50"
+    title: "Тест на время (2/3)"
+    content: "На какой картинке время 'без десяти двенадцать' (11:50)?"
+    form-type: "simple"
+    components:
+      - type: "button"
+        text: "Стрелки на 10 и 12"
+        image: "https://i.imgur.com/example4.png"
+      - type: "button"
+        text: "Стрелки на 11 и 10"
+        image: "https://i.imgur.com/example5.png" # Правильно
+      - type: "button"
+        text: "Стрелки на 12 и 10"
+        image: "https://i.imgur.com/example6.png"
+    correct-answers:
+      button-index: 1
+
+  - id: "clock_13_30"
+    title: "Тест на время (3/3)"
+    content: "Найдите картинку, где время 'пол второго' (13:30)."
+    form-type: "simple"
+    components:
+      - type: "button"
+        text: "Фото А"
+        image: "https://i.imgur.com/example7.png" # Правильно
+      - type: "button"
+        text: "Фото Б"
+        image: "https://i.imgur.com/example8.png"
+      - type: "button"
+        text: "Фото В"
+        image: "https://i.imgur.com/example9.png"
+    correct-answers:
+      button-index: 0
+
+  - id: "minecraft_crafting"
+    title: "База выживания"
+    content: "Из скольких досок крафтится обычный сундук в Minecraft?"
+    form-type: "custom"
+    components:
+      - type: "slider"
+        text: "Укажите количество:"
+        min: 4
+        max: 12
+        step: 1
+        default: 4
+    correct-answers:
+      0: 8.0
