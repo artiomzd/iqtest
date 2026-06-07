@@ -1,0 +1,9 @@
+name: IQTest
+version: 1.0.0
+main: ru.zvezdachan.iqtest.IQTestPlugin
+api-version: "1.21"
+depend: [Geyser-Spigot]
+commands:
+  iqtest:
+    description: Запуск IQ теста
+    permission: iqtest.admin
