@@ -1,0 +1,52 @@
+questions:
+  - id: "linux_managers"
+    title: "Администрирование VDS"
+    content: "Какой пакетный менеджер используется в Arch Linux (включая CachyOS) по умолчанию вместо APT?"
+    form-type: "simple"
+    components:
+      - type: "button"
+        text: "yum"
+        image: ""
+      - type: "button"
+        text: "pacman" # Правильно
+        image: ""
+      - type: "button"
+        text: "dpkg"
+        image: ""
+      - type: "button"
+        text: "zypper"
+        image: ""
+    correct-answers:
+      button-index: 1
+
+  - id: "vaz_engine"
+    title: "Гаражные будни"
+    content: "Какое количество клапанов на цилиндр имеет 1.6-литровый двигатель ВАЗ-21126?"
+    form-type: "custom"
+    components:
+      - type: "slider"
+        text: "Клапанов на 1 цилиндр:"
+        min: 2
+        max: 5
+        step: 1
+        default: 2
+    correct-answers:
+      0: 4.0 # Итого 16 клапанов
+
+  - id: "anime_lore"
+    title: "Visual Novel Lore"
+    content: "Правда ли, что Мистические Глаза Восприятия Смерти позволяют владельцу видеть 'Линии Смерти' на объектах, разрез по которым приводит к их необратимому уничтожению?"
+    form-type: "modal"
+    button1: "Да, это их основное свойство" # Вернет true
+    button2: "Нет, они только показывают срок жизни" # Вернет false
+    correct-answers:
+      modal-result: true
+      
+  - id: "osu_mapping"
+    title: "Ритм-гейминг"
+    content: "В osu!taiko красные ноты называются Don (Дон), а синие - Katsu (Кацу)."
+    form-type: "modal"
+    button1: "Именно так"
+    button2: "Наоборот"
+    correct-answers:
+      modal-result: true
